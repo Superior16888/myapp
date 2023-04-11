@@ -1,0 +1,10 @@
+# Flask virtual environment
+venv/
+
+# Compiled Python files
+*.pyc
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
