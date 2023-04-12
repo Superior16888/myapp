@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'TWETF'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ABFD223D1AE84EDE9A61A62EE36B893D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BA68A54727D04E29BFE6F4593807A708 }}
