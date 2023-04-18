@@ -1,12 +1,13 @@
+from flask import Flask, render_template
 import os
-import streamlit as st
 
-html_files = [f for f in os.listdir('static') if f.endswith('.html')]
+app = Flask(__name__)
 
-def main():
-    st.title("List of HTML files in static folder")
-    st.write(html_files)
+@app.route('/')
+def index():
+    html_files = [f for f in os.listdir('static') if f.endswith('.html')]
+    return render_template('index.html', html_files=html_files)
 
 if __name__ == '__main__':
-    main()
+    app.run()
     
